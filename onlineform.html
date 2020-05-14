@@ -1,0 +1,39 @@
+<?php
+
+if (isset($_POST ['submit']))
+   $firstName = $_POST ['fname'];
+   $lastname = $_POST ['lname'];
+   $email = $_POST ['email'];
+   $password = $_POST ['password'];
+   $passwordConfirn = $_POST ['passwordconfirn'];
+   $subbmit = $_POST ['subbmit'];
+
+echo $firstName."</br>".$lastname."</br>".$email."</br>".$password."</br>".$passwordConfirn;
+
+?>
+
+
+
+<html>
+<head>
+<title>PHP User Registration Form</title>
+<link href="./css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form name="formRegistration" id="formRegistration" method="post" action="">
+        <div name="formSign" id="formSign" class="demo-table">
+        
+<input type="text" name="fname">
+
+<input type="text" name="lname">
+
+<input type="text" name="email">
+
+<input type="password" name="password">
+
+<input type="password" name="passwordconfirn">
+
+<input type="submit" name="submit">
+
+        </div>
+    </form>
